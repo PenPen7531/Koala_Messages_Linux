@@ -21,3 +21,17 @@ li{
 #image{
     max-height: 500px;
 }
+
+.embed > iframe{
+    align-self: center;
+    display: block;
+    text-align: center;
+}
+
+.wendy-bg{
+    background-color: pink;
+}
+
+.jeff-bg{
+    background-color: #89CFF0;
+}
