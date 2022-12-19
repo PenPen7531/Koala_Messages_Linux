@@ -1,0 +1,20 @@
+2022-12-19 15:53:55,040 - instabot version: 0.117.0 (bot) - INFO - Instabot version: 0.117.0 Started
+2022-12-19 15:53:55,041 - instabot version: 0.117.0 (bot) - DEBUG - Bot imported from C:\Users\jeffr\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\instabot\bot\bot.py
+2022-12-19 15:53:55,042 - instabot version: 0.117.0 (api_login) - DEBUG - Loading cookies
+2022-12-19 15:53:55,042 - instabot version: 0.117.0 (api_login) - DEBUG - Loading uuids
+2022-12-19 15:53:55,042 - instabot version: 0.117.0 (api_login) - INFO - Recovery from C:\Users\jeffr\Desktop\Koala_Messages_Linux/config/koala_hugger516_uuid_and_cookie.json: COOKIE True - UUIDs True - TIMING, DEVICE and ...
+- user-agent=Instagram 117.0.0.28.123 Android (28/9.0; 420dpi; 1080x1920; OnePlus; ONEPLUS A3003; OnePlus3; qcom; en_US; 180322800)
+- phone_id=9ba64040-c536-4287-9d70-d78b5aa3f516
+- uuid=2768d3f9-8c51-4d5c-ac59-a50db08c9ec5
+- client_session_id=49031191-4048-4819-b09e-0b8190858a2a
+- device_id=android-def9530e8d73e1ac
+2022-12-19 15:53:55,043 - instabot version: 0.117.0 (api_login) - INFO - LOGIN FLOW! Just logged-in: False
+2022-12-19 15:53:57,731 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: feed/timeline/ returned response: <Response [200]>
+2022-12-19 15:53:57,924 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: feed/reels_tray/ returned response: <Response [200]>
+2022-12-19 15:53:57,925 - instabot version: 0.117.0 (api) - INFO - Logged-in successfully as 'koala_hugger516'!
+2022-12-19 15:53:57,926 - instabot version: 0.117.0 (bot_checkpoint) - DEBUG - Loading Checkpoint file from: C:\Users\jeffr\Desktop\Koala_Messages_Linux/config/koala_hugger516.checkpoint
+2022-12-19 15:54:15,470 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/snickers983/usernameinfo/ returned response: <Response [200]>
+2022-12-19 15:54:16,444 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: direct_v2/threads/broadcast/text/ returned response: <Response [200]>
+2022-12-19 15:55:00,789 - instabot version: 0.117.0 (bot_checkpoint) - DEBUG - Saving Checkpoint file to: C:\Users\jeffr\Desktop\Koala_Messages_Linux/config/koala_hugger516.checkpoint
+2022-12-19 15:55:00,790 - instabot version: 0.117.0 (bot) - INFO - Total messages: 1/61
+2022-12-19 15:55:00,790 - instabot version: 0.117.0 (bot) - INFO - Total requests: 33

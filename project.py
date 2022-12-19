@@ -6,7 +6,7 @@ from flask_wtf import FlaskForm
 from wtforms import FileField, SubmitField
 import os
 from werkzeug.utils import secure_filename
-
+from instabot import Bot
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'MYSecretKey'
@@ -15,6 +15,16 @@ app.config['UPLOAD_FOLDER'] = 'static/files'
 class UploadFileForm(FlaskForm):
     file = FileField("File")
     submit = SubmitField("Upload File")
+
+bot = Bot()
+
+bot.login(
+    username = "koala_hugger516", 
+    password = "y3o4-8_5dCE0$Tf"
+)
+
+users=["snickers983"]
+text="New Message"
 
 @app.route("/")
 def home():
@@ -53,6 +63,11 @@ def post():
             "embed": ""
         }
         wendy_dict.insert(0, new_dict)
+        
+
+        
+
+        bot.send_message(new_post, users)
 
         with open('data/together.json', 'w') as wendy_file:
             wendy_file.write(json.dumps(wendy_dict[:30], indent=4))
