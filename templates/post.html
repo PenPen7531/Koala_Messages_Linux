@@ -14,7 +14,10 @@
 </head>
 <body>
     <nav class="navbar navbar-light bg-light">
+      <div class="navbar-brand">
+        <img src="../static/img/koala.png" width="30" height="30" class="d-inline-block align-top" alt="">
         <span class="navbar-brand mb-0 h1">Koala Messages</span>
+      </div>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -25,10 +28,10 @@
               <a class="nav-link" href="/">Home</a>
             </li>
             
-            <li class="nav-item alert-dark text-center">
+            <!-- <li class="nav-item alert-dark text-center">
                 <a class="nav-link" href="/wendy">View Wendy Messages</a>
-            </li>
-            <!-- {% if name == "Wendy" %}
+            </li> -->
+            {% if name == "Wendy" %}
             <li class="nav-item alert-dark text-center">
                 <a class="nav-link active" href="/wendy/post">Post Wendy</a>
             </li>
@@ -36,7 +39,7 @@
             <li class="nav-item alert-dark text-center">
               <a class="nav-link" href="/wendy/post">Post Wendy</a>
             </li>
-            {% endif %} -->
+            {% endif %}
             {% if name == "Jeff" %}
             <li class="nav-item alert-dark text-center">
               <a class="nav-link active" href="/jeff/post">Post Jeff</a> 
