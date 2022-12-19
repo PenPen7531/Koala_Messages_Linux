@@ -43,14 +43,14 @@ def post():
             image_path=secure_filename(file.filename)
         except:
             image_path=""
-        new_embed = request.form.get('embed')
+        #new_embed = request.form.get('embed')
         new_date = today.strftime("%b-%d-%Y %I:%M %p")
         new_dict={
             "name": "Wendy",
             "post": new_post,
             "date": new_date,
             "img":  image_path,
-            "embed": new_embed
+            "embed": ""
         }
         wendy_dict.insert(0, new_dict)
 

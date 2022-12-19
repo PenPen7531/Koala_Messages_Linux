@@ -1,3 +1,16 @@
 [
-    
+    {
+        "name": "Wendy",
+        "post": "So if you post from Wendy it should be pink! Also you can add images~~~ Ya know~",
+        "date": "Dec-19-2022 03:03 PM",
+        "img": "",
+        "embed": ""
+    },
+    {
+        "name": "Jeff",
+        "post": "You are now able to post on Wendy and it should now turn pink for you! I made a few changes so both of our messages stay on the same page! Also it disappears after 30 messages! I love you~~~",
+        "date": "Dec-19-2022 03:03 PM",
+        "img": "",
+        "embed": ""
+    }
 ]
