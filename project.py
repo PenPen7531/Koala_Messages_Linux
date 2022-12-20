@@ -6,6 +6,11 @@ from flask_wtf import FlaskForm
 from wtforms import FileField, SubmitField
 import os
 from werkzeug.utils import secure_filename
+from pushbullet import Pushbullet
+
+API_Key='o.tqHAt34O2UPyoBh1yJMXA9trK0qOcVFq'
+
+pb = Pushbullet(API_Key)
 
 
 app = Flask(__name__)
@@ -60,6 +65,7 @@ def post():
             "embed": ""
         }
         wendy_dict.insert(0, new_dict)
+        push = pb.push_note("Wendy",new_post)
         
 
         
