@@ -7,6 +7,7 @@ from wtforms import FileField, SubmitField
 import os
 from werkzeug.utils import secure_filename
 from instabot import Bot
+import time
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'MYSecretKey'
@@ -22,6 +23,8 @@ bot.login(
     username = "koala_hugger516", 
     password = "y3o4-8_5dCE0$Tf"
 )
+time.sleep(3600)
+
 
 users=["snickers983"]
 text="New Message"
