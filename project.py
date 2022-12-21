@@ -65,7 +65,7 @@ def post():
         new_embed = request.form.get('embed')
         new_date = today.strftime("%b-%d-%Y %I:%M %p")       
         new_dict={
-            "name": "Jeff",
+            "name": "Wendy",
             "post": new_post,
             "date": new_date,
             "media": media_path,
