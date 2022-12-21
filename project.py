@@ -48,20 +48,28 @@ def post():
             wendy_dict=json.load(wendy_file)
         new_post = request.form.get('post-input')
         file = form.file.data
-        
+        file_type=file.filename.split(".")[-1]
+        print(file_type)
+        if file_type in ['mp4', 'mov', 'webm', 'avi']:
+            f_type = 'video'
+        elif file_type in ['jpeg', 'png', 'jpg', 'gif']:
+            f_type = "image"
+        else:
+            f_type = ""
         try:
             file.save(os.path.join(app.config['UPLOAD_FOLDER'], secure_filename(file.filename)))
 
-            image_path=secure_filename(file.filename)
+            media_path=secure_filename(file.filename)
         except:
-            image_path=""
-        #new_embed = request.form.get('embed')
-        new_date = today.strftime("%b-%d-%Y %I:%M %p")
+            media_path=""
+        new_embed = request.form.get('embed')
+        new_date = today.strftime("%b-%d-%Y %I:%M %p")       
         new_dict={
-            "name": "Wendy",
+            "name": "Jeff",
             "post": new_post,
             "date": new_date,
-            "img":  image_path,
+            "media": media_path,
+            "type": f_type,
             "embed": ""
         }
         wendy_dict.insert(0, new_dict)
