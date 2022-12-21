@@ -78,7 +78,7 @@ def post():
 
         
         with open('data/together.json', 'w') as wendy_file:
-            wendy_file.write(json.dumps(wendy_dict[:30], indent=4))
+            wendy_file.write(json.dumps(wendy_dict[:20], indent=4))
         return redirect('/')
     return redirect('/')
 
@@ -125,7 +125,7 @@ def postAdmin():
 
         
         with open('data/together.json', 'w') as wendy_file:
-            wendy_file.write(json.dumps(admin_dict[:30], indent=4))
+            wendy_file.write(json.dumps(admin_dict[:20], indent=4))
         return redirect('/')
     return redirect('/')
 
