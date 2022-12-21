@@ -88,13 +88,23 @@
         </div>
       </div>
       {% endif %}
-      {% if posts.img!="" %}
-
-      <div class="row alert-primary">
-        <div class="col text-center">
-          <img src="../static/files/{{posts.img}}" alt="" class="img-fluid" id="img">
+      {% if posts.media!="" %}
+        {% if posts.type=="image" %}
+        <div class="row alert-primary">
+          <div class="col text-center">
+            <img src="../static/files/{{posts.media}}" alt="" class="img-fluid" id="img">
+          </div>
         </div>
-      </div>
+        {% endif %}
+        {% if posts.type=="video" %}
+        <div class="row alert-primary">
+          <div class="col text-center">
+            <video controls class="embed-responsive embed-responsive-16by9">
+              <source src="../static/files/{{posts.media}}" type="video/mp4">
+            </video>
+          </div>
+        </div>
+        {% endif %}
       {% endif %}
 
 
